@@ -1,5 +1,6 @@
-import { selectUserIds } from "../../../../store/entities/user/selectors";
+import { selectUserIds } from "../selectors.js";
 import { createAsyncThunk } from "@reduxjs/toolkit";
+import {LOADING_STATUS} from "../../../../constants/loading-status";
 
 export const fetchUsers = createAsyncThunk(
   "user/fetchUsers",

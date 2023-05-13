@@ -1,6 +1,6 @@
 import { LOADING_STATUS } from "../../../../constants/loading-status";
-import { selectReviewIds } from "../../../../store/entities/review/selectors";
-import { selectRestaurantById } from "../../../../store/entities/restaurant/selectors";
+import { selectReviewIds } from "../selectors.js";
+import { selectRestaurantById } from "../../restaurant/selectors.js";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchReviewByRestaurantId = createAsyncThunk(
