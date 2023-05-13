@@ -1,0 +1,12 @@
+.star:not(:last-child) {
+  margin-right: 5px;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
